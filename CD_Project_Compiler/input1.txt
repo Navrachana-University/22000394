@@ -1,0 +1,48 @@
+// This is a sample program in the custom language
+// Following all rules from the parser.y and lexer.l files
+
+// Variable declarations
+a = 5
+b = 10
+name = "Alice"
+
+// Function definition
+start add x, y:
+  sum = x + y
+  show "The sum is"
+  show sum
+  give sum
+end
+
+// Function call
+call add a, b
+
+// Input statement
+ask "What is your name?" into username
+
+// Conditional statement
+check a > b:
+  show "a is greater than b"
+endcheck
+otherwise a == b:
+  show "a is equal to b"
+endotherwise
+default:
+  show "a is less than b"
+  
+  // Nested conditional
+  check name == "Alice":
+    show "Hello Alice!"
+  endcheck
+enddefault
+
+// Loop statement
+loop i = 0; i < 5; i = i + 1:
+  show "Loop iteration"
+  show i
+endloop
+
+// File handling 
+write "Hello World" to "test.txt"
+content = read "test.txt"
+show content
