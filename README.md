@@ -68,8 +68,7 @@ end
 ####  A refernce for rules,identifiers,keyword and syntax for Pycraftr language 
 [Pycraftr Language.pdf](./Pycraftr.pdf)
 
-### Acknowledgement
-- A big thank you to prof.Vaibhavi Patel for her guidance and support during this project.
+
 
 
 
